@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('../font/miso-webfont.woff2') format('woff2'),
+    url('../font/miso-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Miso", sans-serif;
+    background-color: #fdde7e;
+    font-size: 1rem;
+}
+
+.ba-container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.coffee{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ba-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.ba-col {
+    width: 33.3333%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.coffee-item{
+    padding: 2em 0;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee-item_big{
+    padding: 3em 0;
+}
+
+.coffee-item_big .coffee-item__img{
+    margin-bottom: 2.3rem;
+}
+
+.coffee-item_big .coffee-item__price{
+    margin-bottom: 2.3rem;
+}
+
+.coffee-item__img{
+    height: 139px;
+    width: 136px;
+    margin-bottom: 30px;
+}
+
+.coffee-item__img_bronze{
+    content: url("../img/bronze-cup.png");
+}
+
+.coffee-item__img_gold{
+    content: url("../img/gold-cup.png");
+}
+
+.coffee-item__img_silver{
+    content: url("../img/silver-cup.png");
+}
+
+.coffee-item__price{
+    color: #02995b;
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+}
+
+.coffee-item__title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.coffee-item__text{
+    font-family: Arial;
+    font-size: 1.1rem;
+    width: 50%;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+        .ba-col {
+            width: 100%;
+        }
+}
